@@ -1,0 +1,127 @@
+/* Apply general styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul.list-unstyled {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style contact information */
+h5 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#state,
+#phone,
+#email {
+  margin-right: 5px;
+}
+
+.social-profile {
+  margin-top: 20px;
+}
+
+.social-profile li {
+  margin-bottom: 10px;
+}
+
+/* Style skills section */
+h5.text-uppercase {
+  margin-bottom: 10px;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 5px;
+}
+
+/* Style experience and education sections */
+h2.text-uppercase {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#jD,
+#eD {
+  margin-bottom: 20px;
+}
+
+#Job&Com {
+  margin-top: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Style other information section */
+h2.text-uppercase:last-of-type {
+  margin-bottom: 20px;
+}
+
+/* Apply colors */
+body {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.container-fluid {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: #333;
+}
+
+ul.list-unstyled li#s1 {
+  background-color: #ffc107;
+  color: #333;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.social-profile li i {
+  color: #333;
+  margin-right: 5px;
+}
+
+#tag {
+  color: #007bff;
+}
+
+hr {
+  background-color: #ddd;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 767px) {
+  .col-md-4,
+  .col-md-8 {
+    padding: 0;
+  }
+
+  .col-md-4 {
+    margin-bottom: 30px;
+  }
+}

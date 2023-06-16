@@ -1,0 +1,17 @@
+{
+  "name": "project_node",
+  "version": "1.0.0",
+  "description": "Resume_Builder",
+  "main": "resume.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hemansh Solanki",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "https": "^1.0.0",
+    "request": "^2.88.2"
+  }
+}

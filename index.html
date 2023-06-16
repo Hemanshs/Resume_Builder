@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Builder</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+</head>
+<body>
+  <div class="container">
+  <h1 class="text">Resume Builder</h1>
+  <form id="myForm" class="form" action="/resume" method ="post">
+    <div class="form-row">
+      <div class="input-data">
+        <input type="text" id="name" name="name" required>
+        <div class="underline"></div>
+        <label for="name">Name:<span class="required">*</span></label>
+      </div>
+      <div class="input-data">
+        <input type="email" id="email" name="email" required>
+        <div class="underline"></div>
+        <label for="email">Email:<span class="required">*</span></label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-data">
+        <input type="tel" id="phone" name="phone" required>
+        <div class="underline"></div>
+        <label for="phone">Phone:<span class="required">*</span></label>
+      </div>
+      <div class="input-data">
+        <input type="text" id="address" name="address" required>
+        <div class="underline"></div>
+        <label for="address">Address:<span class="required">*</span></label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-data">
+        <input type="url" id="Github" name="Github">
+        <div class="underline"></div>
+        <label for="Github">Github:<span class="required">*</span></label>
+      </div>
+      <div class="input-data">
+        <input type="url" id="Facebook" name="Facebook">
+        <div class="underline"></div>
+        <label for="Facebook">Facebook:<span class="required">*</span></label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-data">
+        <input type="url" id="LinkedIn" name="LinkedIn">
+        <div class="underline"></div>
+        <label for="LinkedIn">LinkedIn:<span class="required">*</span></label>
+      </div>
+      <div class="input-data">
+        <input type="url" id="twitter" name="twitter">
+        <div class="underline"></div>
+        <label for="twitter">Twitter:<span class="required">*</span></label>
+      </div>
+    </div>
+    <div id="summary-container">
+    <div class="form-row">
+      <div class="input-data">
+
+          <textarea id="Tagline" name="Tagline" required></textarea>
+          <div class="underline"></div>
+          <label for="Tagline">Profile Tagline:<span class="required">*</span></label>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- <div>
+      <label for="file"> Select photo:</label><br>
+      <input id="imgField" type="file" accept="image/*" name="image" class="form-control">
+    </div><br> -->
+  <div id="skills-container">
+  <label for="skills">Skills & Proficiency(%):<span class="required">*</span></label>
+  <div class="form-row">
+    <div class="input-data">
+      <input type="text" id="skill1" name="skill1" required>
+      <div class="underline"></div>
+      <label for="skill1">Skill 1:</label>
+    </div>  
+    <div class="input-data">
+      <input type="text" id="skill2" name="skill2" required>
+      <div class="underline"></div>
+      <label for="skill2">Skill 2:</label>
+    </div>  
+    <div class="input-data">
+      <input type="text" id="skill3" name="skill3" required>
+      <div class="underline"></div>
+      <label for="skill3">Skill 3:</label>
+    </div>
+  </div>
+  
+  <div class="form-row">
+    <div class="input-data">
+      <input type="text" id="skill_proficiency1" name="skill_proficiency1" required>
+      <div class="underline"></div>
+      <label for="skill_proficiency1">Skill proficiency 1:</label>
+    </div>  
+    <div class="input-data">
+      <input type="text" id="skill_proficiency2" name="skill_proficiency2" required>
+      <div class="underline"></div>
+      <label for="skill_proficiency2">Skill proficiency 2:</label>
+    </div>  
+    <div class="input-data">
+      <input type="text" id="skill_proficiency3" name="skill_proficiency3" required>
+      <div class="underline"></div>
+      <label for="skill_proficiency3">Skill proficiency 3:</label>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="input-data">
+      <input type="text" id="skill4" name="skill4" required>
+      <div class="underline"></div>
+      <label for="skill4">Skill 4:</label>
+    </div>  
+    <div class="input-data">
+      <input type="text" id="skill5" name="skill5" required>
+      <div class="underline"></div>
+      <label for="skill5">Skill 5:</label>
+    </div>  
+    <div class="input-data">
+      <input type="text" id="skill6" name="skill6" required>
+      <div class="underline"></div>
+      <label for="skill6">Skill 6:</label>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="input-data">
+      <input type="text" id="skill_proficiency4" name="skill_proficiency4" required>
+      <div class="underline"></div>
+      <label for="skill_proficiency4">Skill proficiency 4:</label>
+    </div>  
+    <div class="input-data">
+      <input type="text" id="skill_proficiency5" name="skill_proficiency5" required>
+      <div class="underline"></div>
+      <label for="skill_proficiency5">Skill proficiency 5:</label>
+    </div>  
+    <div class="input-data">
+      <input type="text" id="skill_proficiency6" name="skill_proficiency6" required>
+      <div class="underline"></div>
+      <label for="skill_proficiency6">Skill proficiency 6:</label>
+    </div>
+</div>
+  </div>
+<div id="interests-container">
+  <label for="interests">Interests:<span class="required">*</span></label>
+  <div class="form-row">
+    <div class="input-data">
+      <input type="text" id="interest1" name="interest1" required>
+      <div class="underline"></div>
+      <label for="interest1">Interest 1:</label>
+    </div>
+    <div class="input-data">
+      <input type="text" id="interest2" name="interest2" required>
+      <div class="underline"></div>
+      <label for="interest2">Interest 2:</label>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="input-data">
+      <input type="text" id="interest3" name="interest3" required>
+      <div class="underline"></div>
+      <label for="interest3">Interest 3:</label>
+    </div>
+    <div class="input-data">
+      <input type="text" id="interest4" name="interest4" required>
+      <div class="underline"></div>
+      <label for="interest4">Interest 4:</label>
+    </div>
+  </div>
+</div>
+
+<div id="education-container">
+  <label for="education">Education:<span class="required">*</span></label>
+  <div class="education-item">
+    <div class="form-row">
+      <div class="input-data">
+        <input type="text" id="University_School" name="University_School[]" required>
+        <div class="underline"></div>
+        <label for="University_School">University/School:<span class="required">*</span></label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-data">
+        <input type="text" id="Class" name="Class[]" required>
+        <div class="underline"></div>
+        <label for="Class">Degree/Class:<span class="required">*</span></label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-data">
+        <input type="text" id="Percentage" name="Percentage[]" required>
+        <div class="underline"></div>
+        <label for="Percentage">CGPA/Percentage:<span class="required">*</span></label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-data">
+        <input type="date" id="educationStart" name="educationStart[]" required>
+        <div class="underline"></div>
+        <label for="educationStart">Start Date:</label>
+      </div>
+      <div class="input-data">
+        <input type="date" id="educationEnd" name="educationEnd[]" required>
+        <div class="underline"></div>
+        <label for="educationEnd">End Date:</label>
+      </div>
+    </div>
+  </div>
+  <button type="button" onclick="addField('education')">Add Education</button>
+</div>
+<div id="experience-container">
+  <label for="experience">Experience:<span class="required">*</span></label>
+  
+  <div class="experience-item">
+    <div class="form-row">
+      <div class="input-data">
+        <input type="text" id="company" name="company[]" required>
+        <div class="underline"></div>
+        <label for="company">Company:<span class="required">*</span></label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-data">
+        <input type="text" id="role" name="role[]" required>
+        <div class="underline"></div>
+        <label for="role">Role:<span class="required">*</span></label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-data">
+        <textarea id="project" name="project[]" required></textarea>
+        <div class="underline"></div>
+        <label for="project">Project(s):<span class="required">*</span></label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-data">
+        <input type="date" id="experienceStart" name="experienceStart[]" required><br>
+        <div class="underline"></div>
+        <label for="experienceStart">Start Date:</label><br>
+      </div>
+      <div class="input-data">
+        <input type="date" id="experienceEnd" name="experienceEnd[]" required>
+        <div class="underline"></div>
+        <label for="experienceEnd">End Date:</label>
+      </div>
+    </div>
+  </div>
+  
+        
+  <button type="button" onclick="addField('experience')" >Add Experience</button>
+
+     </div>
+
+
+<div class="form-row submit-btn">
+  <div class="input-data">
+     <div class="inner"></div>
+     <input type="submit" value="Generate Resume" >
+  </div>
+</div>  
+    <!-- <input type="submit" value="Generate Resume" class="submit_button"> -->
+  </form>
+  <div class="footer">
+
+    <ul>
+      <li><a href="solankihemansh@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/hemansh-solanki-59289b155/">LinkedIn</a></li>
+      <li><a href="https://github.com/Hemanshs">Github</a></li>
+      <li>
+        <p>👋</p>
+      </li>
+    </ul>
+  </div>
+  <div class="f1">Made with <span style="color: #860707;">&#9829;</span> in India </div>
+ 
+  </div>
+</div>
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
